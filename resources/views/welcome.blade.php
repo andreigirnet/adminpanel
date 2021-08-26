@@ -20,9 +20,12 @@
             }
         </style>
     </head>
-    <body class="antialiased">
-        <div class="" style="background-color: #f7fafc; display:flex;z-index: 99; margin: 0 auto 0 auto;"> <h2 style="margin: auto; margin-top: 10px;">Administration Panel</h2></div>
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+    <body class="antialiased" style="background-image: url('{{asset('storage/images/back.jpg')}}');">
+    <div >
+        <div style="margin-top: 350px;">
+        <div class="" style=" padding-top:20px;background-color: #f7fafc; display:flex;z-index: 99; margin: 0 auto 0 auto;"> <h2 style="margin: auto; margin-top: 10px;">Administration Panel</h2></div>
+        <div class="relative flex items-top justify-center  bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+
             @if (Route::has('login'))
                 <div class="hidden absolute top-5 right-5 px-6 py-4 sm:block" >
                     @auth
@@ -37,6 +40,8 @@
                 </div>
             @endif
 
-
+        </div>
+        </div>
+    </div>
     </body>
 </html>
